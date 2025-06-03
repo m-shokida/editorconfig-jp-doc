@@ -2,116 +2,51 @@
 <html lang="ja">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>EditorConfig日本語解説サイト</title>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4MV5NP07M5"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EditorConfig日本語解説サイト</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MV5NP07M5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-		gtag('config', 'G-4MV5NP07M5');
-	</script>
-	<script src="https://cdn.tailwindcss.com"></script>
-	<style>
-		body {
-			background-color: #F5F5F5;
-		}
-
-		h2 {
-			color: #0D1B2A;
-		}
-
-		a {
-			color: #1D3557;
-			font-weight: normal;
-		}
-
-		a:hover {
-			font-weight: bold;
-		}
-
-		.card {
-			background-color: #FFFFFF;
-			border-radius: 0.5rem;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-			padding: 2rem;
-			line-height: 1.75;
-		}
-
-		pre {
-			background-color: #F3F4F6;
-			color: #2D3748;
-			padding: 1rem;
-			border-radius: 0.375rem;
-			overflow-x: auto;
-			font-family: monospace;
-		}
-
-		code {
-			background-color: transparent;
-			color: #2D3748;
-			padding: 0.2rem 0.4rem;
-			border-radius: 0.25rem;
-		}
-
-		table {
-			width: 100%;
-			border-collapse: collapse;
-			margin-top: 1rem;
-		}
-
-		th,
-		td {
-			border: 1px solid #D1D5DB;
-			padding: 0.5rem;
-		}
-
-		th {
-			background-color: #E5E7EB;
-			text-align: left;
-		}
-
-		pre code {
-			padding-left: 0;
-			margin-left: 0;
-		}
-	</style>
+    gtag('config', 'G-4MV5NP07M5');
+  </script>
 </head>
 
 <body class="text-[#333333] font-sans">
-	<header class="bg-[#1D3557] text-white py-6 text-center">
-		<h1 class="text-4xl font-bold mb-2">EditorConfig</h1>
-		<p class="text-lg">公式サイト（<a href="https://editorconfig.org/" target="_blank"
-				class="underline">https://editorconfig.org/</a>）の内容を日本語で解説しています。</p>
-	</header>
+  <header class="bg-[#1D3557] text-white py-6 text-center">
+    <h1 class="text-4xl font-bold mb-2">EditorConfig</h1>
+    <p class="text-lg">公式サイト（<a href="https://editorconfig.org/" target="_blank"
+        class="text-white underline">https://editorconfig.org/</a>）の内容を日本語で解説しています。</p>
+  </header>
 
-	<div class="flex max-w-7xl mx-auto py-8 px-4 gap-8">
-		<aside class="w-64 bg-white rounded shadow p-4 h-fit sticky top-8">
-			<nav>
-				<ul class="space-y-2 text-sm">
-					<li><a href="#what-is-editorconfig">EditorConfigとは？</a></li>
-					<li><a href="#example-file">サンプル設定</a></li>
-					<li><a href="#file-location">ファイルの配置場所</a></li>
-					<li><a href="#file-format-details">ファイルフォーマット詳細</a></li>
-					<li><a href="#site-info">当サイトについて</a></li>
-				</ul>
-			</nav>
-		</aside>
+  <div class="flex max-w-7xl mx-auto py-8 px-4 gap-8">
+    <aside class="w-64 bg-white rounded shadow p-4 h-fit sticky top-8">
+      <nav>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#what-is-editorconfig">EditorConfigとは？</a></li>
+          <li><a href="#example-file">サンプル設定</a></li>
+          <li><a href="#file-location">ファイルの配置場所</a></li>
+          <li><a href="#file-format-details">ファイルフォーマット詳細</a></li>
+          <li><a href="#site-info">当サイトについて</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-		<main class="flex-1">
-			<div class="card space-y-10">
-				<section id="what-is-editorconfig">
-					<h2 class="text-2xl font-bold mb-4">EditorConfigとは？</h2>
-					<p>EditorConfigは、複数のエディタやIDE間でコードのスタイル設定を共有するための仕組みです。プロジェクトごとに統一された設定を適用でき、チーム開発でのコードスタイルの統一に役立ちます。
-					</p>
-				</section>
+    <main class="flex-1">
+      <div class="card space-y-10">
+        <section id="what-is-editorconfig">
+          <h2 class="text-2xl font-bold mb-4">EditorConfigとは？</h2>
+          <p>EditorConfigは、複数のエディタやIDE間でコードのスタイル設定を共有するための仕組みです。プロジェクトごとに統一された設定を適用でき、チーム開発でのコードスタイルの統一に役立ちます。
+          </p>
+        </section>
 
-				<section id="example-file">
-					<h2 class="text-2xl font-bold mb-4">サンプル設定</h2>
-					<pre><code># EditorConfigは最高だ!: https://editorconfig.org
+        <section id="example-file">
+          <h2 class="text-2xl font-bold mb-4">サンプル設定</h2>
+          <pre><code># EditorConfigは最高だ!: https://editorconfig.org
 
 # 最上位のEditorConfigファイル
 root = true
@@ -144,111 +79,113 @@ indent_size = 2
 [{package.json,.travis.yml}]
 indent_style = space
 indent_size = 2</code></pre>
-				</section>
+        </section>
 
-				<section id="file-location">
-					<h2 class="text-2xl font-bold mb-4">ファイルの配置場所</h2>
-					<p>EditorConfigの設定ファイル（<code>.editorconfig</code>）は、通常プロジェクトのルートディレクトリに配置します。ファイルはツリー構造をたどって上位の<code>.editorconfig</code>を探索し、最初に<code>root = true</code>が指定されたファイルで探索が終了します。
-					</p>
-				</section>
+        <section id="file-location">
+          <h2 class="text-2xl font-bold mb-4">ファイルの配置場所</h2>
+          <p>
+            EditorConfigの設定ファイル（<code>.editorconfig</code>）は、通常プロジェクトのルートディレクトリに配置します。ファイルはツリー構造をたどって上位の<code>.editorconfig</code>を探索し、最初に<code>root = true</code>が指定されたファイルで探索が終了します。
+          </p>
+        </section>
 
-				<section id="file-format-details">
-					<h2 class="text-2xl font-bold mb-4">ファイルフォーマット詳細</h2>
-					<p>EditorConfigファイルはPythonのconfigparserライブラリで使用されるINI形式に準拠していますが、セクション名には <code>[ ]</code>
-						が使用できます。セクション名はファイルパスのglobパターン（大文字小文字を区別）で、<code>gitignore</code>と同様の形式を採用しています。パス区切りはスラッシュ（<code>/</code>）のみで、コメントには
-						<code>#</code> または <code>;</code>
-						を使用します。EditorConfigファイルはUTF-8でエンコードされ、改行コードはCRLFまたはLFのいずれかを使用できます。EditorConfigファイルは上から下へと読み込まれ、後に記述されたルールが優先されます。
-					</p>
+        <section id="file-format-details">
+          <h2 class="text-2xl font-bold mb-4">ファイルフォーマット詳細</h2>
+          <p>EditorConfigファイルはPythonのconfigparserライブラリで使用されるINI形式に準拠していますが、セクション名には <code>[ ]</code>
+            が使用できます。セクション名はファイルパスのglobパターン（大文字小文字を区別）で、<code>gitignore</code>と同様の形式を採用しています。パス区切りはスラッシュ（<code>/</code>）のみで、コメントには
+            <code>#</code> または <code>;</code>
+            を使用します。EditorConfigファイルはUTF-8でエンコードされ、改行コードはCRLFまたはLFのいずれかを使用できます。EditorConfigファイルは上から下へと読み込まれ、後に記述されたルールが優先されます。
+          </p>
 
-					<h3 class="text-xl font-semibold mt-6 mb-2">設定項目一覧</h3>
-					<table>
-						<thead>
-							<tr>
-								<th>設定項目</th>
-								<th>説明</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><code>indent_style</code></td>
-								<td>インデントの種類（space または tab）</td>
-							</tr>
-							<tr>
-								<td><code>indent_size</code></td>
-								<td>インデントの幅</td>
-							</tr>
-							<tr>
-								<td><code>tab_width</code></td>
-								<td>タブの幅（必要に応じて指定）</td>
-							</tr>
-							<tr>
-								<td><code>end_of_line</code></td>
-								<td>改行コード（lf, crlf, cr）</td>
-							</tr>
-							<tr>
-								<td><code>charset</code></td>
-								<td>文字コード（例: utf-8）</td>
-							</tr>
-							<tr>
-								<td><code>trim_trailing_whitespace</code></td>
-								<td>行末の空白を削除するか</td>
-							</tr>
-							<tr>
-								<td><code>insert_final_newline</code></td>
-								<td>ファイルの最後に改行を入れるか</td>
-							</tr>
-							<tr>
-								<td><code>max_line_length</code></td>
-								<td>行の最大文字数</td>
-							</tr>
-						</tbody>
-					</table>
+          <h3 class="text-xl font-semibold mt-6 mb-2">設定項目一覧</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>設定項目</th>
+                <th>説明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>indent_style</code></td>
+                <td>インデントの種類（space または tab）</td>
+              </tr>
+              <tr>
+                <td><code>indent_size</code></td>
+                <td>インデントの幅</td>
+              </tr>
+              <tr>
+                <td><code>tab_width</code></td>
+                <td>タブの幅（必要に応じて指定）</td>
+              </tr>
+              <tr>
+                <td><code>end_of_line</code></td>
+                <td>改行コード（lf, crlf, cr）</td>
+              </tr>
+              <tr>
+                <td><code>charset</code></td>
+                <td>文字コード（例: utf-8）</td>
+              </tr>
+              <tr>
+                <td><code>trim_trailing_whitespace</code></td>
+                <td>行末の空白を削除するか</td>
+              </tr>
+              <tr>
+                <td><code>insert_final_newline</code></td>
+                <td>ファイルの最後に改行を入れるか</td>
+              </tr>
+              <tr>
+                <td><code>max_line_length</code></td>
+                <td>行の最大文字数</td>
+              </tr>
+            </tbody>
+          </table>
 
-					<h3 class="text-xl font-semibold mt-6 mb-2">ワイルドカードパターン</h3>
-					<table>
-						<thead>
-							<tr>
-								<th>パターン</th>
-								<th>意味</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><code>*</code></td>
-								<td>任意の文字列（スラッシュを除く）にマッチ</td>
-							</tr>
-							<tr>
-								<td><code>**</code></td>
-								<td>ディレクトリをまたいで任意の文字列にマッチ</td>
-							</tr>
-							<tr>
-								<td><code>?</code></td>
-								<td>任意の1文字にマッチ</td>
-							</tr>
-							<tr>
-								<td><code>[abc]</code></td>
-								<td>a, b, c のいずれかの1文字にマッチ</td>
-							</tr>
-							<tr>
-								<td><code>[!abc]</code></td>
-								<td>a, b, c 以外の1文字にマッチ</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
+          <h3 class="text-xl font-semibold mt-6 mb-2">ワイルドカードパターン</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>パターン</th>
+                <th>意味</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>*</code></td>
+                <td>任意の文字列（スラッシュを除く）にマッチ</td>
+              </tr>
+              <tr>
+                <td><code>**</code></td>
+                <td>ディレクトリをまたいで任意の文字列にマッチ</td>
+              </tr>
+              <tr>
+                <td><code>?</code></td>
+                <td>任意の1文字にマッチ</td>
+              </tr>
+              <tr>
+                <td><code>[abc]</code></td>
+                <td>a, b, c のいずれかの1文字にマッチ</td>
+              </tr>
+              <tr>
+                <td><code>[!abc]</code></td>
+                <td>a, b, c 以外の1文字にマッチ</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-				<section id="site-info">
-					<h2 class="text-2xl font-bold mb-4">当サイトについて</h2>
-					<p>このサイトはEditorConfig公式サイトではなく、個人が作成した解説サイトです。詳しくは公式サイト（<a href="https://editorconfig.org/"
-							target="_blank" class="underline">https://editorconfig.org/</a>）を参照してください。</p>
-				</section>
-			</div>
-		</main>
-	</div>
+        <section id="site-info">
+          <h2 class="text-2xl font-bold mb-4">当サイトについて</h2>
+          <p>このサイトはEditorConfig公式サイトではなく、個人が作成した解説サイトです。詳しくは公式サイト（<a href="https://editorconfig.org/" target="_blank"
+              class="underline">https://editorconfig.org/</a>）を参照してください。</p>
+        </section>
+      </div>
+    </main>
+  </div>
 
-	<footer class="bg-[#1D3557] text-white text-center py-4">
-		<p>&copy; 2025 EditorConfig日本語解説サイト</p>
-	</footer>
+  <footer class="bg-[#1D3557] text-white text-center py-4">
+    <p>&copy; 2025 EditorConfig日本語解説サイト</p>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
